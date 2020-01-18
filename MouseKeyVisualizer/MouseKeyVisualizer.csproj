@@ -70,10 +70,20 @@
     <Compile Include="AppSettings.cs" />
     <Compile Include="CanvasSection.cs" />
     <Compile Include="ConcurrentFile.cs" />
-    <Compile Include="IElement.cs" />
+    <Compile Include="Elements\Dashboard.xaml.cs">
+      <DependentUpon>Dashboard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Elements\IElement.cs" />
+    <Compile Include="Elements\Origin.cs" />
+    <Compile Include="Elements\Origins.cs" />
     <Compile Include="KeysToContentConverter.cs" />
-    <Compile Include="ObservableKey.cs" />
+    <Compile Include="Elements\ObservableKey.cs" />
+    <Compile Include="Multi_IntToDashboardAngleConverter.cs" />
     <Compile Include="ViewModelBase.cs" />
+    <Page Include="Elements\Dashboard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -123,5 +133,6 @@
   <ItemGroup>
     <Content Include="ShaderEffects.dll" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

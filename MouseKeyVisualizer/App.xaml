@@ -4,6 +4,7 @@
              xmlns:local="clr-namespace:MouseKeyVisualizer"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
+        <local:Multi_IntToDashboardAngleConverter x:Key="Multi_IntToDashboardAngleConverter" />
     </Application.Resources>
 </Application>

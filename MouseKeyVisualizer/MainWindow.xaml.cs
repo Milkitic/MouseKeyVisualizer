@@ -17,6 +17,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 using MouseKeyVisualizer.Annotations;
+using MouseKeyVisualizer.Elements;
 
 namespace MouseKeyVisualizer
 {
